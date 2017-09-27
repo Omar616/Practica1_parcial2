@@ -1,23 +1,24 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Alumnos : Bueno Rosas Brayan Omar, López Esquivel Ándres  
+   Grupo: 5IM8
+   Fecha:25/09/2017
  */
 package practica;
 
 /**
  *
- * @author Alumno
+ * @author Bueno y Lopez
  */
-public abstract class Perrito {
+public abstract class Perrito {//Declaracion de la clase perrito como abstracta
+    //Variables caracteristicas de perrito
     private int edad=0;
     private String color="";
     private int comida=0;
     private int agua=0;
-
+    //Constructor vacio para hacer instancias sin mandar parametros
     public Perrito() {
     }
-
+     //Contructores que inciializanlas variablespermiten crear objetos con diferentes parametros  
     Perrito(int edad,String color,int comida,int agua){
         this.edad=edad;
         this.color=color;
@@ -49,7 +50,8 @@ public abstract class Perrito {
         this.color=color;
         
     }
-    
+    //Metodos abstractos que permiten que el mismo metodo tenga diferente comportamiento 
+    // Al instanciar esta clase los metodos seran extraidos
     public abstract void ladra();
    
     public abstract void camina();
@@ -57,7 +59,7 @@ public abstract class Perrito {
     public abstract void comer();
     
     public abstract void perseguirgatos();
-    
+    //Metodo con accion, no es abstracto 
     public void ladra2 (){
         System.out.println("WOU WOU ");
     }
